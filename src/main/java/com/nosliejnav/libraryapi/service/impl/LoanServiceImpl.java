@@ -10,7 +10,9 @@ import com.nosliejnav.libraryapi.model.repository.LoanRepository;
 import com.nosliejnav.libraryapi.service.LoanService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LoanServiceImpl implements LoanService {
 
     private LoanRepository loanRepository;
