@@ -1,17 +1,11 @@
-# Compiled class files
+# Arquivo .gitignore para projetos Spring Boot / Java / Maven
+
+# ----------------------------------------
+# 1. ARQUIVOS DE BUILD E COMPILACAO
+# ----------------------------------------
+
+# Arquivos de classe compilados
 *.class
-
-# Log files
-*.log
-
-# IDE specific files
-.idea/
-*.iml
-*.ipr
-*.iws
-
-# VS Code settings
-.vscode/
 
 # Maven target directory
 /target/
@@ -20,30 +14,55 @@
 /.gradle/
 /build/
 
-# Spring Boot DevTools
-/.spring-boot-devtools/
+# Diretorio de saida de compilacao da IDE (IntelliJ)
+/out/
 
-# JAR files
+# Arquivos JAR, WAR, EAR
 *.jar
 *.war
 *.ear
 
-# Dependency directories
-/.m2/
+# ----------------------------------------
+# 2. ARQUIVOS ESPECIFICOS DE IDEs
+# ----------------------------------------
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# VS Code settings
+.vscode/
 
 # Eclipse specific files
 /.project
 /.classpath
 /.settings/
 
-# IntelliJ IDEA specific files
-/.idea/
-/*.iml
+# Arquivos de dependencia (M2 cache)
+/.m2/
 
-# Operating System files
-.DS_Store
-Thumbs.db
+# ----------------------------------------
+# 3. LOGS E ARQUIVOS TEMPORARIOS
+# ----------------------------------------
 
-# Temporary files
+# Log files
+*.log
+
+# Spring Boot DevTools (arquivos temporarios)
+/.spring-boot-devtools/
+
+# Arquivos temporarios
 *.swp
 *~
+
+# ----------------------------------------
+# 4. ARQUIVOS DE SISTEMA OPERACIONAL
+# ----------------------------------------
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
